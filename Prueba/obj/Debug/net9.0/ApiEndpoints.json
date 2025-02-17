@@ -1,0 +1,76 @@
+[
+  {
+    "ContainingType": "Prueba.Controllers.CarController",
+    "Method": "CreateCar",
+    "RelativePath": "api/Car/CreateCar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "car",
+        "Type": "Shared.Dto.CarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prueba.Controllers.CarController",
+    "Method": "DeleteCarById",
+    "RelativePath": "api/Car/DeleteCarById/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prueba.Controllers.CarController",
+    "Method": "GetByFilters",
+    "RelativePath": "api/Car/GetByFilters",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filters",
+        "Type": "Shared.FilterCarModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prueba.Controllers.CarController",
+    "Method": "UpdateCar",
+    "RelativePath": "api/Car/UpdateCar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "car",
+        "Type": "Shared.Dto.CarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prueba.Controllers.CountryController",
+    "Method": "GetByFilters",
+    "RelativePath": "api/Country/GetCountries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

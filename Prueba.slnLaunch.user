@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "StartAllProjects",
+    "Projects": [
+      {
+        "Path": "Prueba\\Prueba.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MVC\\MVC.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

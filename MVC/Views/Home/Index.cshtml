@@ -1,0 +1,84 @@
+﻿<div class="text-center">
+
+    <header>
+
+    </header>
+
+
+    <div id="alert"></div>
+	<div class="datatable">
+		<table class="table table-striped table-dark" id="gridCar">
+			<thead>
+				<tr>
+					<th scope="col">País</th>
+					<th scope="col">Marca</th>
+					<th scope="col">Modelo</th>
+					<th scope="col">Año</th>
+					<th scope="col">Patente</th>
+					<th scope="col">Código Vin</th>
+					<th scope="col">Opciones</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+
+
+    <div class="modal fade" id="editCarModal" tabindex="-1" aria-labelledby="editCarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalType">Editar Carro</h5>
+                    <butto type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></butto n>
+                </div>
+                <div class="modal-body">
+                    <div id="alertModal"></div>
+                    <input type="hidden" id="editCarId">
+                    <div class="mb-3">
+                        <label class="form-label">País:</label>
+                        <select id="editCountry" class="form-select form-select-sm ms-2">
+                            <option value="">Selecione um país</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Marca:</label>
+                        <input type="text" id="editBrand" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Modelo:</label>
+                        <input type="text" id="editModel" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Año:</label>
+                        <input type="number" id="editYear" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Patente:</label>
+                        <input type="text" id="editPatent" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Código Vin:</label>
+                        <input type="text" id="editCodeVin" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" onclick="saveCarChanges()">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+	
+	<script src="~/js/car.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			Car.Init();
+
+		});
+	</script>
+
+}
